@@ -1,0 +1,38 @@
+1.classic callback example:
+    - callback.js
+
+2. node async callback explanation:
+    - see OneNote_resources notebook
+
+3. use encoding to make the api call more flexible/dynamic
+
+4. error checking
+    - first need to identify different kinds of errors
+           error message comes from
+            (1) "error" (usually happens when fail to connect to the server) OR
+            (2) reponse's status code
+           thus need to check both
+    - check docs to see what kind of error it may return
+
+5. ***function could always take a function as an argument -> used for call back once the task is finished****
+        - call back wiithn call back,
+            see geocode.js + app.js
+
+        - the way we call callback in geocode.js is like the mechanism for the optional mechanism
+             if error
+                -> only pass the first argument, ignore the second one
+             if not
+                -> 1st argument to be undefined, pass in the second one
+
+6. ***chainning two callback functions together
+        - check app.js
+
+7. Promise helps you better manage async functions in Nodejs
+       - comparison between normal callbacks and Promise
+         (1) in Promise, we could only call either rejected or resolved;
+                Even when we call it twice, '.then' function will only be trigged once
+         (2) in normal callback, we mya call callback more than one given
+             that there are many if/else statements; no ways to check it
+       - two states for Promise: pending, or settled, e.g.
+         (1) when pending, the Promise is waiting for the getting results from the http request
+         (2) when settled, it is either rejected or resolved

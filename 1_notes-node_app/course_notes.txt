@@ -1,0 +1,20 @@
+(1)  take arguments from  command line,
+        we could do node app.js XXX in terminal
+        and that XXX can be accessed in .js file using process.argv
+        the argument we pass in starts from the 2nd position(note: 0-based array)
+(2) to pass in more sub-arguments,
+        library: yargs
+        example input: node app.js add --title=secrets
+                       and
+                       node app.js add XXX
+
+(3)In Javascript, if no return is expicitly defined, "undefined" will be defined
+        - make use of the return value --> use it as a flag
+
+(4) simplifided version of if/else statements
+        - var mesage = noteRemoved ? 'Note was removed' : 'Note Not found';
+
+(5)make use of module.export to separate export functions and local functions(sort of encapsulation)
+
+(6)About arrow function:
+       - playground/arrow-function.js

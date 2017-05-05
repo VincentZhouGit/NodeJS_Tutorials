@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <excludedPredefinedLibrary name="nodejs_udemy/1_notes-node_app/node_modules" />
+    <excludedPredefinedLibrary name="nodejs_udemy/1_notes-node_basics/node_modules" />
+  </component>
+</project>

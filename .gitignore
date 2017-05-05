@@ -1,0 +1,13 @@
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+/1_notes-node_app/node_modules
+/1_notes-node_basics/node_modules
+/2_weather-app/node_modules

@@ -1,0 +1,14 @@
+#npm
+(1) npm init -> this will create package.json where we specify which 3rd party modules we want to install into our app
+(2) to view each package: go to "wwww.npmjs.com"
+(3) lodash library - provide lots of utility functions
+        to install: "npm install lodash --save"
+(4) don't push node_modules to github
+(5) install the package globally(under the npm folder)
+        "npm install nodemon -g"
+(6) to install a specifica version
+        "npm install yargs@4.7.1 --save"
+
+
+
+
